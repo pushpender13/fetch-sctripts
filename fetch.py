@@ -66,5 +66,11 @@ def download_file(url, path, file_type):
     except Exception as e:
         print(f"Error downloading {url}: {e}")
 
-# Example usage:
-fetch_and_save_scripts('https://www.example.com')  # Replace with your target URL
+def main():
+    # Prompt the user for the URL
+    url = input("Please enter the URL to fetch scripts from: ")
+    fetch_and_save_scripts(url)
+
+# Run the main function
+if __name__ == "__main__":
+    main()
